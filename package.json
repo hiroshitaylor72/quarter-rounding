@@ -1,6 +1,6 @@
 {
   "name": "quarter-rounding",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Rounds a given date down, up, or to the nearest quarter boundary, returning the quarter start date and the quarter number.",
   "type": "module",
   "main": "src/index.js",
