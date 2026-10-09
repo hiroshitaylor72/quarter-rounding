@@ -31,3 +31,10 @@ The two decisions most likely to surprise:
 - `roundDateNearest` breaks ties by rounding up.
 
 Both are documented in the source and covered by tests.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
